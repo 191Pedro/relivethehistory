@@ -1,0 +1,128 @@
+@font-face {
+    font-family: introrb;
+    src: url(../css/font/introrust-base.otf);
+}
+@font-face {
+    font-family: montserratbold;
+    src: url(../css/font/MontserratAlternates-Bold.otf);
+}
+@font-face {
+    font-family: leaguespa;
+    src: url(../css/font/LeagueSpartan-Bold.otf);
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    overflow: hidden;
+}
+html, body, nav, main, footer, section, .cg{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #383838;
+}
+.backcor{
+    margin: 0 auto;
+    height: 100px;
+    width: 100vw;
+    max-width: 35cm;
+    background-color: #383838;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    height: 140px;
+    transform: translateY(-20px);
+}
+.linkindex{
+    height: 140px;
+    width: 140px;
+}
+.bn{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 50px;
+    color: #d3d3d3;
+    font-family: introrb;
+    cursor: pointer;
+}
+.singbutt{
+    transition: 0.3s;
+}
+.singbutt a{
+    color: inherit;
+    text-decoration: none;
+}
+.underline{
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #d3d3d3;
+    transition: 0.3s;
+}
+.singbutt:hover{
+    color: #ffffff;
+    font-size: 20px;
+    .underline{
+        width: 100%;
+        background-color: #ffffff;
+    }
+}
+.singbuttalt:hover{
+    .underline{
+        width: 100%;
+        background-color: #ffffff;
+    }
+}
+
+section{
+    margin: 10px;
+}
+.figuras{
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.illustration{
+    opacity: 0.1;
+    height: 117px;
+    filter: saturate(0%);
+}
+.rthdiv{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    max-width: 30cm;
+    padding: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #21212179;
+    backdrop-filter: blur(5px);
+    font-family: leaguespa;
+    font-weight: lighter;
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rthdiv div p{
+    filter: drop-shadow(1px 1px 0px #000000);
+}
+#logo2{
+    height: 300px;
+    filter: drop-shadow(1px 1px 0px #000000);
+}
