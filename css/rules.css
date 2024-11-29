@@ -1,0 +1,323 @@
+@font-face {
+    font-family: introrb;
+    src: url(../css/font/introrust-base.otf);
+}
+@font-face {
+    font-family: montserratbold;
+    src: url(../css/font/MontserratAlternates-Bold.otf);
+}
+@font-face {
+    font-family: leaguespa;
+    src: url(../css/font/LeagueSpartan-Bold.otf);
+}
+@font-face {
+    font-family: glacialind;
+    src: url(../css/font/GlacialIndifference-Regular.otf);
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    overflow: hidden;
+}
+html, body, nav, main, footer, section, .cg{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #383838;
+}
+.backcor{
+    margin: 0 auto;
+    height: 100px;
+    width: 100vw;
+    max-width: 35cm;
+    background-color: #383838;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    height: 140px;
+    transform: translateY(-20px);
+}
+.linkindex{
+    height: 140px;
+    width: 140px;
+}
+.bn{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 50px;
+    color: #d3d3d3;
+    font-family: introrb;
+    cursor: pointer;
+}
+.singbutt{
+    transition: 0.3s;
+}
+.singbuttalt{
+    transition: 0.3s;
+    color: #ffffff;
+    font-size: 20px;
+}
+.singbutt a{
+    color: inherit;
+    text-decoration: none;
+}
+.singbuttalt a{
+    color: inherit;
+    text-decoration: none;
+}
+.underline{
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #d3d3d3;
+    transition: 0.3s;
+}
+.singbutt:hover{
+    color: #ffffff;
+    font-size: 20px;
+    .underline{
+        width: 100%;
+        background-color: #ffffff;
+    }
+}
+.singbuttalt:hover{
+    .underline{
+        width: 100%;
+        background-color: #ffffff;
+    }
+}
+
+section{
+    margin: 10px;
+}
+.figuras{
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.illustration{
+    opacity: 0.1;
+    height: 117px;
+    filter: saturate(0%);
+}
+.illustration:hover{
+    opacity: 0.5;
+}
+.rthdiv{
+    width: 70%;
+    max-width: 30cm;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #21212179;
+    backdrop-filter: blur(5px);
+    font-family: glacialind;
+    font-size: 20px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+::-webkit-scrollbar{
+    background-color: #383838;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    border: #383838 3px solid;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #ffffff;
+}
+.rthdiv div p{
+    filter: drop-shadow(1px 1px 0px #000000);
+}
+.texto{
+    display: block;
+}
+
+/*Regras*/
+
+.corperso{
+    color: #ffd667;
+}
+.corsupor{
+    color: #67ff6f;
+}
+.corsaude{
+    color: #67e8ff;
+}
+.corcaoco{
+    color: #c680ff;
+}
+.corhabpa{
+    color: #70ffc3;
+}
+.corhabes{
+    color: #ff9870;
+}
+.attention{
+    color: #ff7070;
+    font-variant: small-caps;
+    font-size: 22px;
+}
+
+
+.rthdiv h1, h3{
+    text-align: center;
+    filter: drop-shadow(1px 1px 0px #000000);
+}
+.text{
+    overflow-y: scroll;
+    height: 100%;
+}
+.tab{
+    margin: 0px 20px;
+}
+.regra1{
+    align-items: center;
+    gap: 20px;
+    background-color: #383838;
+    border: 2px solid #d3d3d3;
+    margin: 0 0 0 20px;
+    width: 90%;
+    padding: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-align: justify;
+}
+.regra2{
+    align-items: center;
+    gap: 20px;
+    background-color: #383838;
+    border: 2px solid #d3d3d3;
+    border-top: none;
+    margin: 0 0 0 20px;
+    width: 90%;
+    padding: 20px;
+    text-align: justify;
+}
+.caracoroa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.caracoroa p{
+    margin: 0;
+    font-size: 30px;
+}
+.caco{
+    height: 100px;
+}
+.regra3{
+    align-items: center;
+    gap: 20px;
+    background-color: #383838;
+    border: 2px solid #d3d3d3;
+    border-top: none;
+    margin: 0 0 0 20px;
+    width: 90%;
+    padding: 20px;
+    text-align: justify;
+}
+.regra3 img{
+    height: 130px;
+    display: flex;
+    margin: 0 auto;
+}
+.ordem{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    gap: 10px;
+}
+.regra4{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    background-color: #383838;
+    border: 2px solid #d3d3d3;
+    border-top: none;
+    margin: 0 0 0 20px;
+    width: 90%;
+    padding: 20px;
+    text-align: justify;
+}
+.regra5{
+    align-items: center;
+    gap: 20px;
+    background-color: #383838;
+    border: 2px solid #d3d3d3;
+    border-top: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin: 0 0 0 20px;
+    width: 90%;
+    padding: 20px;
+    text-align: justify;
+}
+.cartaP{
+    width: 50%;
+}
+.cartaS{
+    width: 50%;
+}
+.diagram{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: none;
+    margin: 0 0 0 20px;
+    width: 90%;
+    height: 400px;
+}
+.diagram p{
+    width: 50%;
+}
+.diagramdiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.diagramdiv p{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.clickexp.expandido{
+    display: none;
+}
+.diagramimg{
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+.diagramimg.expandido{
+    position: absolute;
+    height: 90vh;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
